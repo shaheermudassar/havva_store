@@ -1,0 +1,206 @@
+body {
+    overflow: overlay;
+  }
+  
+  .mytext {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .download-icon {
+    margin-left: 4px;
+  }
+  
+  .bottom-border {
+    border-bottom: 2px rgb(88, 86, 84) dotted;
+  }
+  
+  .Details {
+    font-weight: 800;
+  }
+  
+  .title {
+    margin: 0 10px;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 100;
+    transition: 0.7s;
+  }
+  
+  .logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    position: fixed;
+    left: 20px;
+  }
+  
+  nav a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s;
+    /* Transition color separately */
+  }
+  
+  .menu-a {
+    color: #000;
+  }
+  
+  
+  nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.3s ease-in-out;
+    /* Transition width for the border */
+  }
+  
+  nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #7f00ff;
+    transition: width 0.3s ease-in-out;
+    /* Transition width for the border */
+  }
+  
+  nav a:hover::before,
+  nav a.active::before,
+  nav ul li a:hover::before {
+    width: 100%;
+  }
+  
+  header.scrolled {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  header.scrolled nav a {
+    color: #000;
+  }
+  
+  header.scrolled button {
+    color: #000;
+  }
+  
+  header.scrolled .logo {
+    color: #000;
+  }
+  
+  header.scrolled nav a::before {
+    background-color: #7f00ff;
+  }
+  
+  header.scrolled nav a.active {
+    color: #7f00ff;
+  }
+  
+  .menu-button {
+    margin-left: 50px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .transition-05 {
+    transition: 0.5s;
+  }
+  
+  .transition-03 {
+    transition: 0.3s;
+  }
+  
+  .parallax {
+  
+    background-attachment: fixed;
+  }
+  
+  .s-links {
+    margin: 4px;
+  }
+  
+  .s-links:hover a i {
+    transition: 0.3s;
+    color: white;
+  }
+  
+  .menu-list {
+    padding: 10px;
+  }
+  
+  .close-menu {
+    padding: 10px;
+    text-align: -webkit-right;
+  }
+  .side-menu{
+    width: 24rem;
+  }
+  @media only screen and (max-width: 767px) {
+    .navLinks {
+      display: none;
+    }
+    .side-menu{
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .navLinks {
+      display: none;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .navLinks {
+      display: none;
+    }
+   
+  }
+  #colection{
+    padding: 2rem;
+  }
+  .collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 2rem;
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media only screen and (max-width: 767px) {
+    .collection{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1rem;
+    }
+    #collection{
+      padding: 0;
+    }
+    .contact-grid{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  

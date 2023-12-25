@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="modeOfStyle" rel="stylesheet" href="css/style.css">
+  <title>Havva Store</title>
+  <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-secondary-50">
+  <header>
+    <a href="#" class="mytext logo">Havva Store</a>
+    <nav class="navLinks">
+      <a class="mytext" href="index.html">Home</a>
+      <a class="mytext" href="#collection" class="active">All Products</a>
+      <a class="mytext" href="#contact">Contact</a>
+      <!-- <button onclick="themeMode()">change mode</button> -->
+    </nav>
+    <button class="menu-button" type="button" data-te-offcanvas-toggle data-te-target="#offcanvasRight"
+      aria-controls="offcanvasRight" data-te-ripple-init data-te-ripple-color="light">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div
+    class="side-menu invisible fixed bottom-0 right-0 top-0 z-[1045] flex translate-x-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
+    tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-te-offcanvas-init>
+      <button type="button"
+        class="box-content close-menu rounded-none border-none opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+        data-te-offcanvas-dismiss>
+        <span
+          class="w-[1em] focus:opacity-100 disabled:pointer-events-none disabled:select-none disabled:opacity-25 [&.disabled]:pointer-events-none [&.disabled]:select-none [&.disabled]:opacity-25">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </span>
+      </button>
+      <div class="flex p-4">
+        <nav>
+          <ul>
+            <li class="menu-list">
+              <a class="mytext menu-a text-2xl" href="index.html">Home</a>
+            </li>
+            <li class="menu-list">
+              <a class="mytext menu-a text-2xl" href="#collection">All Products</a>
+            </li>
+            <li class="menu-list">
+              <a class="mytext menu-a text-2xl" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Jumbotron -->
+  <section>
+    <div class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center parallax" id="bg-image"
+      style="background-image: url('images/bg1.jpg'); height: 50vh; transition: 1s ease-in-out;">
+      <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="flex h-full items-center justify-center">
+          <div class="text-white">
+            <h2 class="greetings mytext mb-4 text-3xl font-semibold">All Products</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+
+  <section id="collection" class="p-8">
+    <div class="collection">
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Maria_B_Couture.html">
+          <img class="rounded-t-lg" src="images/Maria B Couture.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Maria B Couture
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Maria_B_Couture.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Elaf_03-Zaina.html">
+          <img class="rounded-t-lg" src="images/Elaf 03-Zaina.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Elaf 03-Zaina
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Elaf_03-Zaina.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Elaf_06-Zafir.html">
+          <img class="rounded-t-lg" src="images/Elaf 06-Zafir.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Elaf 06-Zafir
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Elaf_06-Zafir.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Kanwal_Malik_Nargis.html">
+          <img class="rounded-t-lg" src="images/Kanwal Malik Nargis.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Kanwal Malik Nargis
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Kanwal_Malik_Nargis.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Kanwal_Malik_Noor.html">
+          <img class="rounded-t-lg" src="images/Kanwal Malik Noor.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Kanwal Malik Noor
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Kanwal_Malik_Noor.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Mariyam_Hussain_02-Nurey.html">
+          <img class="rounded-t-lg" src="images/Mariyam Hussain 02-Nurey.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Mariyam Hussain 02-Nurey
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Mariyam_Hussain_02-Nurey.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Mariyam_Hussain_01-Alara.html">
+          <img class="rounded-t-lg" src="images/Mariyam Hussain 01-Alara.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Mariyam Hussain 01-Alara
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Mariyam_Hussain_01-Alara.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Suffuse_Jahan.html">
+          <img class="rounded-t-lg" src="images/Suffuse Jahan.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Suffuse Jahan
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Suffuse_Jahan.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      <div
+        class="block shadow-xl hover:shadow-2xl transition-03 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <a href="Suffuse_Zille.html">
+          <img class="rounded-t-lg" src="images/Suffuse Zille.jpeg" alt="" />
+        </a>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+            Suffuse Zille
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Rs. 5000
+          </p>
+          <a href="Suffuse_Zille.html"
+            class="inline-block rounded bg-[#7f00ff] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out"
+            data-te-ripple-init data-te-ripple-color="light">
+            Buy Now
+          </a>
+        </div>
+      </div>
+      
+
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div
+      class="relative parallax h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/284.jpg')]">
+      <div class="grid col-1 justify-center text-center">
+        <div class="text-center pb-2">
+          <h2 class="mytext capitalize mb-4 mt-14 text-white text-4xl font-semibold">Contact</h2>
+          <p class="text-white mb-0 mx-auto text-base max-w-[600px]">
+            Lets get in touch.</p>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <div class="px-6 md:px-12">
+        <div
+          class="block rounded-lg hover:shadow-2xl transition-03 bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+              <div class="contact-grid">
+                <div class="mb-12">
+                  <div class="flex items-start">
+                    <div class="shrink-0">
+                      <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                          stroke="currentColor" class="h-6 w-6">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6 grow">
+                      <p class="mb-2 font-bold dark:text-white">
+                        Technical support
+                      </p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        havva_clothingstore@gmail.com
+                      </p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        +92 332 3431874
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-12 ">
+                  <div class="flex items-start">
+                    <div class="shrink-0">
+                      <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                          stroke="currentColor" class="h-6 w-6">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="ml-6 grow">
+                      <p class="mb-2 font-bold dark:text-white">
+                        Sales questions
+                      </p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        havva_clothingstore@gmail.com
+                      </p>
+                      <p class="text-neutral-500 dark:text-neutral-200">
+                        +92 332 3431874
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section: Design Block -->
+    </div>
+    <!-- Container for demo purpose -->
+  </section>
+  <!-- Footer Start -->
+  <footer class="py-16 bg-light">
+    <div class="">
+      <div class="grid md:grid-cols-1 items-center justify-center">
+        <div class="text-center">
+          <a href="javascript:void(0)" class="mytext text-3xl md:text-3xl font-semibold">Havva Store</a>
+
+
+          <div class="flex flex-row justify-center mt-6">
+            <div
+              style="border-radius: 100%; height: 50px; width: 50px; display: grid; justify-content: center; align-content: center;"
+              class="s-links transition-03 hover:bg-[#7f00ff]">
+              <a href="javascript:void(0)" target="_blank"
+                class="p-3 text-2xl transition-03 transform transition-all duration-400 ease-in-out"><i
+                  class="fa-brands fa-facebook text-black"></i></a>
+            </div>
+            <div
+              style="border-radius: 100%; height: 50px; width: 50px; display: grid; justify-content: center; align-content: center;"
+              class="s-links transition-03 hover:bg-[#7f00ff]">
+              <a href="javascript:void(0)" target="_blank"
+                class="p-3 text-2xl transition-03 transform transition-all duration-400 ease-in-out"><i
+                  class="fa-brands fa-twitter text-black"></i></a>
+            </div>
+            <div
+              style="border-radius: 100%; height: 50px; width: 50px; display: grid; justify-content: center; align-content: center;"
+              class="s-links transition-03 hover:bg-[#7f00ff]">
+              <a href="javascript:void(0)" target="_blank"
+                class="p-3 text-2xl transition-03 transform transition-all duration-400 ease-in-out"><i
+                  class="fa-brands fa-instagram text-black"></i></a>
+            </div>
+            <div
+              style="border-radius: 100%; height: 50px; width: 50px; display: grid; justify-content: center; align-content: center;"
+              class="s-links transition-03 hover:bg-[#7f00ff]">
+              <a href="javascript:void(0)" target="_blank"
+                class="p-3 text-2xl transition-03 transform transition-all duration-400 ease-in-out"><i
+                  class="fa-solid fa-envelope text-black"></i></a>
+            </div>
+            <div
+              style="border-radius: 100%; height: 50px; width: 50px; display: grid; justify-content: center; align-content: center;"
+              class="s-links transition-03 hover:bg-[#7f00ff]">
+              <a href="javascript:void(0)" target="_blank"
+                class="p-3 text-2xl transition-03 transform transition-all duration-400 ease-in-out"><i
+                  class="fa-brands fa-google-plus text-black"></i></a>
+            </div>
+            <div
+              style="border-radius: 100%; height: 50px; width: 50px; display: grid; justify-content: center; align-content: center;"
+              class="s-links transition-03 hover:bg-[#7f00ff]">
+              <a href="javascript:void(0)" target="_blank"
+                class="p-3 text-2xl transition-03 transform transition-all duration-400 ease-in-out"><i
+                  class="fa-brands fa-linkedin text-black"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="py-6 bg-[#7f00ff]">
+    <div class="text-center">
+      <p class="mb-0 text-white font-normal text-base">©
+        <script>document.write(new Date().getFullYear())</script> Havva Store
+      </p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script>
+<script src="js/script.js"></script>
+
+</html>
